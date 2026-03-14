@@ -63,9 +63,6 @@ pip install -r requirements.txt
 
 ### 5. Configure API Credentials
 
-```bash
-cp .env.example .env
-```
 
 Open `.env` and fill in your credentials:
 
