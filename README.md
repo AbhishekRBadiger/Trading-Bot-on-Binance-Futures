@@ -71,7 +71,6 @@ BINANCE_API_KEY=your_actual_api_key
 BINANCE_API_SECRET=your_actual_api_secret
 ```
 
-> ⚠️ **Never commit your `.env` file.** It is already listed in `.gitignore`.
 
 ---
 
@@ -206,11 +205,4 @@ No third-party Binance SDK used — all API calls are direct REST requests.
 
 ---
 
-## 🔒 Assumptions
 
-- **Testnet only** — hardcoded to `https://testnet.binancefuture.com`. Do not use with real mainnet credentials.
-- **USDT-M Futures** — all orders placed on USDT-Margined perpetual contracts.
-- **Timestamp sync** — the bot fetches server time from Binance before each signed request to avoid clock skew errors (`-1021`).
-- **Quantity precision** — enter quantities that respect the symbol's step size. The API will return a clear error if precision is off.
-- **Leverage** — uses whatever leverage is set on your testnet account (default: 20x). The bot does not change leverage.
-- **Testnet funds** — claim free USDT from the testnet dashboard if needed.
