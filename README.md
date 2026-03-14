@@ -10,7 +10,7 @@ A clean, modular Python CLI application for placing orders on the **Binance Futu
 trading_bot/
 ├── bot/
 │   ├── __init__.py
-│   ├── client.py          # Binance Futures REST API client (timestamp-synced)
+│   ├── client.py          # Binance Futures REST API client
 │   ├── orders.py          # Order placement logic & response formatting
 │   ├── validators.py      # CLI input validation (type, range, required combos)
 │   └── logging_config.py  # Rotating file + console logging setup
@@ -30,7 +30,7 @@ trading_bot/
 ### 1. Get Binance Futures Testnet Credentials
 
 1. Go to [https://testnet.binancefuture.com](https://testnet.binancefuture.com)
-2. Log in with your GitHub account (no KYC required)
+2. Log in with your account 
 3. Click your profile (top-right) → **"API Key"**
 4. Click **Generate** — copy both the **API Key** and **Secret Key**
    > ⚠️ The Secret Key is shown **only once**. Save it immediately.
